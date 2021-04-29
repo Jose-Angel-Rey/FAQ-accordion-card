@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>FAQ Accordion Card | Frontend Mentor</title>
+
+</head>
+
+<body>
+
+  <main class="card-container">
+
+    <section class="card-img">
+
+      <img src="./images/illustration-woman-online-desktop.svg" alt="Woman illustration"
+        class="card-img__woman-desktop" />
+
+      <img src="./images/illustration-box-desktop.svg" alt="Box illustration" class="card-img__box-img" />
+
+      <img src="./images/bg-pattern-desktop.svg" alt="Background pattern" class="card-img__bg-pattern-desktop" />
+
+    </section>
+
+    <section class="card-content">
+
+      <h1 class="card-content__title">FAQ</h1>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" name="accordion" id="item 1">
+          <label for="item 1" class="accordion__title">How many team members can I invite?</label>
+          <p class="accordion__content">
+            You can invite up to 2 additional users on the Free plan. There is no
+              limit on
+              team members for the Premium plan.
+          </p>
+        </div>
+
+        <div class="accordion-item">
+          <input type="checkbox" name="accordion" id="item 2">
+          <label for="item 2" class="accordion__title">What is the maximum file upload size?</label>
+          <p class="accordion__content">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        
+        </div>
+      
+        <div class="accordion-item">
+          <input type="checkbox" name="accordion" id="item 3">
+          <label for="item 3" class="accordion__title">How do I reset my password?</label>
+          <p class="accordion__content">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+          </p>
+        
+        </div>
+        
+        <div class="accordion-item">
+          <input type="checkbox" name="accordion" id="item 4">
+          <label for="item 4" class="accordion__title">Can I cancel my subscription?</label>
+          <p class="accordion__content">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </p>
+        
+        </div>
+
+        <div class="accordion-item">
+          <input type="checkbox" name="accordion" id="item 5">
+          <label for="item 5" class="accordion__title">Do you provide adittional support?</label>
+          <p class="accordion__content">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+        
+        </div>
+      
+      </div>
+
+    </section>
+  </main>
+
+  <div class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    </p>
+
+    <p>
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </div>
+</body>
+
+</html>
