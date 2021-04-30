@@ -1,0 +1,31 @@
+/* Base styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main-container {
+    background-color: var(--body-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    width: 100%;
+    min-height: 100vh;
+  }
+  /* Attribution footer*/
+.attribution {
+    background-color: var(--body-bg-color);
+    font-size: 14px;
+    text-align: center;
+    color: green;
+    padding: 20px;
+  }
+  .attribution a {
+    color: purple;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  .attribution a:hover {
+    color: blueviolet;
+  }
