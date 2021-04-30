@@ -53,6 +53,16 @@
   justify-content: center;
   position: absolute;
   width: 100%;
+  transition: all 0.5s;
+  animation: beat 1s 1s alternate infinite;
+}
+@keyframes beat {
+  from {
+    transform: scale(1.01);
+  }
+  to {
+    transform: scale(0.95);
+  }
 }
 .woman-illustration__main-illustration-mobile {
   transform: translate(-5%, -55%);
