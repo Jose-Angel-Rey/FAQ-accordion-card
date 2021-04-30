@@ -29,9 +29,6 @@
   width: 100%;
   min-height: 100vh;
 }
-img {
-  max-width: 100%;
-}
 /* FAQ */
 .faq-container {
   background-color: #fff;
@@ -54,7 +51,9 @@ img {
   position: relative;
 }
 .woman-illustration__main-illustration-mobile {
-  transform: translateY(-55%);
+  transform: translate(-5%,-55%);
+  width: 90%;
+  max-width: 325px;
 }
 .woman-illustration__bg-pattern-mobile {
   position: absolute;
