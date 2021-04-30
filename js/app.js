@@ -1,19 +1,21 @@
 const item = document.querySelectorAll(".accordion-list__item");
 
-console.log(item[0].children);
+console.log(item.length);
+console.log(item.children);
+
+console.log(item[0].parentElement);
+console.log(item[0].children[1].classList);
 console.log(item[0].children[0].firstElementChild);
 
-item[0].addEventListener("click", () => {
-  console.log(item[0].children);
+for (let i = 0; i < item.length; i++) {
+    item[i].addEventListener("click", checkClass);
+}
 
-  console.log(item[0].children[1].classList);
-
-  return !item[0].children[1].classList.contains(
-    "accordion-list__item-description--visible"
-  )
+function checkClass(){
+    return !item[0].children[1].classList.contains("accordion-list__item-description--visible")
     ? addEffects()
     : removeEffects();
-});
+}
 
 function addEffects() {
   item[0].children[1].classList.add("accordion-list__item-description--visible");
