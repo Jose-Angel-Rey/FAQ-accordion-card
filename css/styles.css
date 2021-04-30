@@ -143,8 +143,7 @@
   opacity: 0;
   transition: all 0.5s;
 }
-.accordion-list__item-title-container:active
-  + .accordion-list__item-description {
+.accordion-list__item-description--visible {
   line-height: 20px;
   margin-bottom: 10px;
   transform: translateY(0);
