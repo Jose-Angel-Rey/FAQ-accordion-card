@@ -129,10 +129,10 @@
   padding-right: 10px;
   transition: color 0.5s;
 }
-.accordion-list__item-title:hover {
+.accordion-list__item-title-container:hover > .accordion-list__item-title {
   color: var(--item-title-color-hover);
 }
-.accordion-list__item-title:active {
+.accordion-list__item-title-container:active > .accordion-list__item-title {
   font-weight: 700;
   color: var(--item-title-color-active);
 }
