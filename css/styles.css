@@ -4,6 +4,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
+:root{
+    font-family: 'Kumbh Sans', sans-serif;
+}
 .main-container {
     background-color: var(--body-bg-color);
     display: flex;
