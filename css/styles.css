@@ -25,28 +25,49 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0px 10px;
+  padding: 150px 0px 10px;
   width: 100%;
   min-height: 100vh;
 }
-img{
+img {
   max-width: 100%;
 }
 /* FAQ */
-.faq-container{
+.faq-container {
   background-color: #fff;
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 90%;
+  max-width: 375px;
 }
 /* FAQ - Illustration */
-.faq-illustration-container{
+.faq-illustration-container {
   border: 1px solid blue;
-
+  width: 100%;
 }
-
+.woman-illustration-mobile-container {
+  border: 1px solid mediumseagreen;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.woman-illustration__main-illustration-mobile {
+  transform: translateY(-55%);
+}
+.woman-illustration__bg-pattern-mobile {
+  position: absolute;
+}
+.woman-illustration-desktop-container {
+  display: none;
+}
+.woman-illustration__main-illustration-desktop {
+  display: none;
+}
+.faq-illustration__box-illustration {
+  display: none;
+}
 /* Attribution footer*/
 .attribution {
   background-color: var(--body-bg-color);
