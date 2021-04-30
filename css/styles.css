@@ -4,31 +4,44 @@
   padding: 0px;
   box-sizing: border-box;
 }
-:root{
-    font-family: 'Kumbh Sans', sans-serif;
+:root {
+  font-family: "Kumbh Sans", sans-serif;
+
+  /* Body background */
+  --bg-gradient: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+
+  /* Item text colors */
+  --item-title-color: hsl(237, 12%, 33%);
+  --item-title-color-hover: hsl(14, 88%, 65%);
+  --item-title-color-active: hsl(238, 29%, 16%);
+  --item-description-color: hsl(240, 6%, 50%);
+
+  /* Item divider */
+  --divider-bg-color: hsl(240, 5%, 91%);
 }
 .main-container {
-    background-color: var(--body-bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 0px;
-    width: 100%;
-    min-height: 100vh;
-  }
-  /* Attribution footer*/
+  background-image: var(--bg-gradient);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  width: 100%;
+  min-height: 100vh;
+}
+/* Attribution footer*/
 .attribution {
-    background-color: var(--body-bg-color);
-    font-size: 14px;
-    text-align: center;
-    color: green;
-    padding: 20px;
-  }
-  .attribution a {
-    color: purple;
-    text-decoration: none;
-    transition: color 0.5s;
-  }
-  .attribution a:hover {
-    color: blueviolet;
-  }
+  background-color: var(--body-bg-color);
+  font-size: 14px;
+  text-align: center;
+  color: green;
+  padding: 20px;
+}
+.attribution a {
+  color: purple;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.attribution a:hover {
+  color: blueviolet;
+}
