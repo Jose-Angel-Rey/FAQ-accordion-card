@@ -25,10 +25,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 0px;
+  padding: 100px 0px 10px;
   width: 100%;
   min-height: 100vh;
 }
+img{
+  max-width: 100%;
+}
+/* FAQ */
+.faq-container{
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+}
+/* FAQ - Illustration */
+.faq-illustration-container{
+  border: 1px solid blue;
+
+}
+
 /* Attribution footer*/
 .attribution {
   background-color: var(--body-bg-color);
