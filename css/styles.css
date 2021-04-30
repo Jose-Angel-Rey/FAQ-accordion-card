@@ -41,22 +41,28 @@
 }
 /* FAQ - Illustration */
 .faq-illustration-container {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 100%;
-}
-.woman-illustration-mobile-container {
-  border: 1px solid mediumseagreen;
   display: flex;
   justify-content: center;
   position: relative;
 }
+.woman-illustration-mobile-container {
+  /* border: 1px solid mediumseagreen; */
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
 .woman-illustration__main-illustration-mobile {
-  transform: translate(-5%,-55%);
+  transform: translate(-5%, -55%);
   width: 90%;
-  max-width: 325px;
+  max-width: 300px;
 }
 .woman-illustration__bg-pattern-mobile {
   position: absolute;
+  width: 80%;
+  max-width: 270px;
 }
 .woman-illustration-desktop-container {
   display: none;
@@ -66,6 +72,71 @@
 }
 .faq-illustration__box-illustration {
   display: none;
+}
+/* FAQ - Content */
+.faq-content {
+  /* border: 1px solid magenta; */
+  margin: 150px 0px 50px;
+  width: 85%;
+}
+.faq-content__title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+/* FAQ - Content - Accordion */
+.accordion-container {
+  /* border: 1px solid blue; */
+}
+.accordion-list__item {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.accordion-list__item-title-container {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  width: 100%;
+}
+.accordion-list__item-title-container::after {
+  content: "";
+  background-color: var(--divider-bg-color);
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.accordion-list__item-title {
+  color: var(--item-title-color);
+  font-size: 13px;
+  font-weight: 400;
+  transition: color 0.5s;
+}
+.accordion-list__item-title:hover {
+  color: var(--item-title-color-hover);
+}
+.accordion-list__item-title:active {
+  font-weight: 700;
+  color: var(--item-title-color-active);
+}
+.accordion-list__item-description {
+  color: var(--item-description-color);
+  position: absolute;
+  line-height: 0;
+  display: none;
+  transition: all 0.5s;
+}
+.accordion-list__item-title-container:active
+  + .accordion-list__item-description {
+  display: block;
+  line-height: 20px;
+  margin-bottom: 10px;
+  position: static;
 }
 /* Attribution footer*/
 .attribution {
