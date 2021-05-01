@@ -24,14 +24,3 @@ for (let i = 0; i < item.length; i++) {
     }
   });
 }
-
-// function addEffects(){
-//   itemTitle.classList.add("accordion-list__item-title--active")
-//   itemDesc.classList.add("accordion-list__item-description--visible")
-//   arrowIcon.classList.add("accordion-list__arrow-icon--rotate")
-// }
-// function removeEffects(){
-//   itemTitle.classList.remove("accordion-list__item-title--active")
-//   itemDesc.classList.remove("accordion-list__item-description--visible")
-//   arrowIcon.classList.remove("accordion-list__arrow-icon--rotate")
-// }
