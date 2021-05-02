@@ -155,6 +155,7 @@
   transform: translateY(0);
   visibility: visible;
   opacity: 1;
+  transition: all 0.8s ease;
 }
 /* Attribution footer*/
 .attribution {
