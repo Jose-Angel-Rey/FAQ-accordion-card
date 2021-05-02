@@ -96,7 +96,7 @@
   margin-bottom: 25px;
 }
 /* FAQ - Content - Accordion */
-.accordion{
+.accordion {
   border: 1px solid magenta;
   max-height: 375px;
   overflow-y: hidden;
@@ -115,7 +115,7 @@
   bottom: 0;
 }
 /* Tile */
-.accordion__item-title{
+.accordion__item-title {
   /* border: 1px solid orange; */
   background-color: #fff;
   color: var(--item-title-color);
@@ -127,18 +127,22 @@
   align-items: center;
   padding: 25px 0px;
   width: 100%;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-.accordion__item-title::after{
+.accordion__item-title::after {
   content: url(../images/icon-arrow-down.svg);
   margin-left: 10px;
+  transition: all 0.8s ease;
 }
-.accordion__item-title:hover{
+.accordion__item-title:hover {
   color: var(--item-title-color-hover);
 }
 .accordion__item-title--active {
   font-weight: 700;
   color: var(--item-title-color-active);
+}
+.accordion__item-title--active::after {
+  transform: rotate(0.5turn);
 }
 /* Description */
 .accordion__item-description {
@@ -148,7 +152,7 @@
   transform: translateY(-30px);
   opacity: 0;
   visibility: hidden;
-  transition: all .8s ease;
+  transition: all 0.8s ease;
 }
 .accordion__item-description--visible {
   line-height: 20px;
