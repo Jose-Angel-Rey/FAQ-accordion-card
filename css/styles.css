@@ -111,7 +111,7 @@
 }
 /* Tile */
 .accordion__item-title{
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   background-color: #fff;
   color: var(--item-title-color);
   cursor: pointer;
@@ -136,7 +136,7 @@
   color: var(--item-title-color-active);
 }
 /* Description */
-.accordion-list__item-description {
+.accordion__item-description {
   color: var(--item-description-color);
   line-height: 0;
   transform: translateY(-30px);
@@ -165,16 +165,4 @@
 }
 .attribution a:hover {
   color: orange;
-}
-.list-item{
-  border: 1px solid orange;
-  list-style-type: none;
-}
-.item-title{
-  border: 1px solid red;
-  font-size: 16px;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0px;
-}
 }
