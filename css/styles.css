@@ -96,6 +96,11 @@
   margin-bottom: 25px;
 }
 /* FAQ - Content - Accordion */
+.accordion{
+  border: 1px solid magenta;
+  max-height: 375px;
+  overflow-y: hidden;
+}
 .accordion__item {
   display: flex;
   flex-direction: column;
@@ -131,13 +136,14 @@
 .accordion__item-title:hover{
   color: var(--item-title-color-hover);
 }
-.accordion-list__item-title--active {
+.accordion__item-title--active {
   font-weight: 700;
   color: var(--item-title-color-active);
 }
 /* Description */
 .accordion__item-description {
   color: var(--item-description-color);
+  font-size: 14px;
   line-height: 0;
   transform: translateY(-30px);
   opacity: 0;
