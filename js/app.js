@@ -1,17 +1,22 @@
-const item = document.querySelectorAll(".accordion__item");
+const accordionItems = document.querySelectorAll(".accordion__item-title");
 // console.log(item);
-// console.log(item.length);
+// console.log(item[0].nextElementSibling);
 
-item.forEach((element) => {
-  element.addEventListener("click", () => {
-    if (!element.lastElementChild.classList.contains("accordion__item-description--visible")) {
-      itemId = 1;
-      element.firstElementChild.classList.add("accordion__item-title--active");
-      element.lastElementChild.classList.add("accordion__item-description--visible");
-      console.log(itemId);
+accordionItems.forEach((accordionItem) => {
+  accordionItem.addEventListener("click", () => {
+    if (!accordionItem.nextElementSibling.classList.contains("accordion__item-description--visible")) {
+    
+      const checkOthersItems = document.querySelectorAll("accordion__item-description--visible")
+    checkOthersItems.forEach((otherItem) => {
+      otherItem.classList.remove("accordion__item-description--visible");  
+    console.log(otherItem);
+    }) 
+    
+      accordionItem.classList.add("accordion__item-title--active");
+      accordionItem.nextElementSibling.classList.add("accordion__item-description--visible");
     } else {
-      element.firstElementChild.classList.remove("accordion__item-title--active");
-      element.lastElementChild.classList.remove("accordion__item-description--visible");
+      accordionItem.classList.remove("accordion__item-title--active");
+      accordionItem.nextElementSibling.classList.remove("accordion__item-description--visible");
     }
   })
 })
