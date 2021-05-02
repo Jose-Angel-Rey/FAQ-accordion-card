@@ -96,11 +96,6 @@
   margin-bottom: 25px;
 }
 /* FAQ - Content - Accordion */
-.accordion {
-  border: 1px solid magenta;
-  max-height: 375px;
-  overflow-y: hidden;
-}
 .accordion__item {
   display: flex;
   flex-direction: column;
