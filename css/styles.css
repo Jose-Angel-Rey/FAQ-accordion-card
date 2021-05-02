@@ -96,27 +96,12 @@
   margin-bottom: 25px;
 }
 /* FAQ - Content - Accordion */
-.accordion-container {
-  /* border: 1px solid blue; */
-  /* max-height: 350px; */
-  /* overflow-y: hidden; */
-}
-.accordion-list__item {
-  font-size: 13px;
+.accordion__item {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.accordion-list__item-title-container {
-  background-color: #fff;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 0px;
-  width: 100%;
-}
-.accordion-list__item-title-container::after {
+.accordion__item::after {
   content: "";
   background-color: var(--divider-bg-color);
   height: 1px;
@@ -124,21 +109,33 @@
   position: absolute;
   bottom: 0;
 }
-.accordion-list__item-title {
+/* Tile */
+.accordion__item-title{
+  border: 1px solid orange;
+  background-color: #fff;
   color: var(--item-title-color);
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
-  padding-right: 10px;
-  transition: all 0.5s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0px;
+  width: 100%;
+  transition: all .5s;
 }
-.accordion-list__item-title-container:hover > .accordion-list__item-title {
+.accordion__item-title::after{
+  content: url(../images/icon-arrow-down.svg);
+  margin-left: 10px;
+}
+.accordion__item-title:hover{
   color: var(--item-title-color-hover);
 }
 .accordion-list__item-title--active {
   font-weight: 700;
   color: var(--item-title-color-active);
 }
+/* Description */
 .accordion-list__item-description {
   color: var(--item-description-color);
   line-height: 0;
@@ -147,18 +144,12 @@
   visibility: hidden;
   transition: all .8s ease;
 }
-.accordion-list__item-description--visible {
+.accordion__item-description--visible {
   line-height: 20px;
   margin-bottom: 10px;
   transform: translateY(0);
   visibility: visible;
   opacity: 1;
-}
-.accordion-list__arrow-icon {
-  transition: transform 0.5s;
-}
-.accordion-list__arrow-icon--rotate {
-  transform: rotate(0.5turn);
 }
 /* Attribution footer*/
 .attribution {
@@ -186,11 +177,4 @@
   justify-content: space-between;
   padding: 20px 0px;
 }
-.item-title::after{
-  content: url(../images/icon-arrow-down.svg);
-  margin-left: 10px;
-}
-.item-description{
-  height: 0px;
-  visibility: hidden;
 }
