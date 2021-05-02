@@ -175,3 +175,22 @@
 .attribution a:hover {
   color: orange;
 }
+.list-item{
+  border: 1px solid orange;
+  list-style-type: none;
+}
+.item-title{
+  border: 1px solid red;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.item-title::after{
+  content: url(../images/icon-arrow-down.svg);
+  margin-left: 10px;
+}
+.item-description{
+  height: 0px;
+  visibility: hidden;
+}
