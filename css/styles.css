@@ -97,9 +97,9 @@
 }
 /* FAQ - Content - Accordion */
 .accordion-container {
-  border: 1px solid blue;
-  max-height: 350px;
-  overflow-y: hidden;
+  /* border: 1px solid blue; */
+  /* max-height: 350px; */
+  /* overflow-y: hidden; */
 }
 .accordion-list__item {
   font-size: 13px;
@@ -145,7 +145,7 @@
   transform: translateY(-30px);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.5s;
+  transition: all .8s ease;
 }
 .accordion-list__item-description--visible {
   line-height: 20px;
