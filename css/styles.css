@@ -41,14 +41,12 @@
 }
 /* FAQ - Illustration */
 .faq-illustration-container {
-  /* border: 1px solid blue; */
   width: 100%;
   display: flex;
   justify-content: center;
   position: relative;
 }
 .woman-illustration-mobile-container {
-  /* border: 1px solid mediumseagreen; */
   display: flex;
   justify-content: center;
   position: absolute;
@@ -85,7 +83,6 @@
 }
 /* FAQ - Content */
 .faq-content {
-  /* border: 1px solid magenta; */
   margin: 150px 0px 50px;
   width: 85%;
 }
@@ -95,7 +92,7 @@
   text-transform: uppercase;
   margin-bottom: 25px;
 }
-/* FAQ - Content - Accordion */
+/* Accordion item */
 .accordion__item {
   display: flex;
   flex-direction: column;
@@ -109,9 +106,8 @@
   position: absolute;
   bottom: 0;
 }
-/* Tile */
+/* Accordion item - Title*/
 .accordion__item-title {
-  /* border: 1px solid orange; */
   background-color: #fff;
   color: var(--item-title-color);
   cursor: pointer;
@@ -139,7 +135,7 @@
 .accordion__item-title--active::after {
   transform: rotate(0.5turn);
 }
-/* Description */
+/* Accordion item - Description */
 .accordion__item-description {
   color: var(--item-description-color);
   font-size: 14px;
