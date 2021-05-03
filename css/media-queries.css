@@ -13,7 +13,6 @@
   /* FAQ - Illustration */
   .faq-illustration-container {
     width: 50%;
-    border: 1px solid orange;
   }
   .woman-illustration-mobile-container {
     display: none;
@@ -51,7 +50,6 @@
   }
   /* FAQ - Content */
   .faq-content {
-    border: 1px solid magenta;
     width: 50%;
     margin: auto;
     padding-right: 50px;
@@ -68,12 +66,13 @@
 }
 /* ----------- 1024px ---------------- */
 @media screen and (min-width: 1024px) {
-  .woman-illustration__bg-pattern-desktop{
+  /* FAQ - Illustration */
+  .woman-illustration__bg-pattern-desktop {
     width: 130%;
-    left: -185px;  
+    left: -185px;
     top: 0%;
   }
-    .faq-illustration__box-illustration {
+  .faq-illustration__box-illustration {
     left: -22%;
     top: 38%;
   }
