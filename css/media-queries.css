@@ -35,14 +35,19 @@
     width: 125%;
     position: absolute;
     left: -150px;
-    top: 5%;
+    top: 10%;
   }
   .faq-illustration__box-illustration {
+    animation: floating 2s 1s alternate infinite;
     display: block;
     position: absolute;
     left: -25%;
-    top: 35%;
-    z-index: 100000000;
+    top: 32%;
+  }
+  @keyframes floating {
+      from{
+          transform: translateY(-15%);
+      }
   }
   /* FAQ - Content */
   .faq-content {
