@@ -6,6 +6,26 @@
   .faq-container {
     max-width: 950px;
   }
+  /* FAQ - Illustration */
+  .faq-illustration-container {
+    width: 50%;
+    border: 1px solid orange;
+  }
+  .woman-illustration-mobile-container {
+    display: none;
+  }
+  .woman-illustration-desktop-container {
+    display: block;
+    /* width: 50%; */
+  }
+  .faq-illustration__box-illustration {
+    display: block;
+  }
+  /* FAQ - Content */
+  .faq-content {
+    border: 1px solid magenta;
+    width: 50%;
+  }
   /*  Attribution footer */
   .attribution {
     position: absolute;
